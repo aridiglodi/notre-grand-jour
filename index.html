@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f0e7">
+  <meta name="description" content="Vous êtes chaleureusement invités à célébrer notre mariage.">
+  <title>Notre Grand Jour — Invitation de mariage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Cinzel:wght@400;500;600&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ÉCRAN D'OUVERTURE -->
+  <div class="opening" id="opening" aria-label="Ouvrir l'invitation">
+    <div class="opening-inner">
+      <p class="eyebrow">VOUS ÊTES CORDIALEMENT INVITÉS</p>
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter"><span>Nous nous marions</span><strong data-initials> P & P </strong><small>Avec amour</small></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="wax-seal" aria-hidden="true" data-initials>P&P</div>
+        </div>
+      </div>
+      <h1 class="opening-names" data-couple>Prénom 1 <i>&</i> Prénom 2</h1>
+      <p class="opening-date" data-date>Jour · Date · Mois · Année</p>
+      <button class="button button-light" id="openInvitation">Ouvrir notre invitation <span aria-hidden="true">↗</span></button>
+      <p class="tiny-note">Une journée, une promesse, une histoire à célébrer.</p>
+    </div>
+  </div>
+
+  <main id="mainContent" class="site hidden">
+    <section class="hero" id="accueil">
+      <div class="hero-photo" role="img" aria-label="Photo des mariés"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow light">LE DÉBUT D'UN NOUVEAU CHAPITRE</p>
+        <h1 class="hero-names"><span data-name1>Prénom 1</span><em>&</em><span data-name2>Prénom 2</span></h1>
+        <p class="hero-welcome">Deux cœurs, une promesse, et le bonheur de la partager avec vous.</p>
+        <div class="hero-rule"></div>
+        <p class="hero-date" data-date>Jour · Date · Mois · Année</p>
+        <a class="text-link light-link" href="#histoire">Découvrir notre histoire <span>↓</span></a>
+      </div>
+      <div class="hero-bottom"><span>AVEC AMOUR</span><span>01 — POUR TOUJOURS</span></div>
+    </section>
+
+    <section class="section intro-section" id="histoire">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAQUE HISTOIRE A UN DÉBUT</p>
+        <h2 class="word-reveal">Notre histoire</h2>
+        <p class="section-intro">Quelques instants précieux qui nous ont conduits jusqu'à ce grand jour.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-mark"><span>01</span></div>
+          <div class="timeline-copy"><p class="eyebrow">LE PREMIER CHAPITRE</p><h3>Notre rencontre</h3><p>[Racontez ici comment vos chemins se sont croisés.]</p><span class="timeline-date">[Date de la rencontre]</span></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-mark"><span>02</span></div>
+          <div class="timeline-copy"><p class="eyebrow">UN MOMENT À DEUX</p><h3>Le premier rendez-vous</h3><p>[Le souvenir d'un sourire, d'une conversation ou d'un lieu spécial.]</p><span class="timeline-date">[Date du premier rendez-vous]</span></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-mark"><span>03</span></div>
+          <div class="timeline-copy"><p class="eyebrow">POUR LA VIE</p><h3>La demande en mariage</h3><p>[Quelques mots sur cette demande que vous n'oublierez jamais.]</p><span class="timeline-date">[Date de la demande]</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">DES SOUVENIRS À L'INFINI</p><h2 class="word-reveal">Un peu de nous</h2>
+        <p class="section-intro">Des instants simples, des souvenirs précieux, et tant de belles choses à venir.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery-card reveal"><img src="photos/photo-1.jpg" alt="Souvenir des mariés, photo 1" loading="lazy"><figcaption>Le bonheur, tout simplement</figcaption></figure>
+        <figure class="gallery-card gallery-card-offset reveal"><img src="photos/photo-2.jpg" alt="Souvenir des mariés, photo 2" loading="lazy"><figcaption>À tes côtés</figcaption></figure>
+        <figure class="gallery-card reveal"><img src="photos/photo-3.jpg" alt="Souvenir des mariés, photo 3" loading="lazy"><figcaption>Nos plus beaux instants</figcaption></figure>
+        <figure class="gallery-card gallery-card-offset reveal"><img src="photos/photo-4.jpg" alt="Souvenir des mariés, photo 4" loading="lazy"><figcaption>Et toute une vie devant nous</figcaption></figure>
+        <figure class="gallery-card reveal"><img src="photos/photo-5.jpg" alt="Souvenir des mariés, photo 5" loading="lazy"><figcaption>Notre petit monde</figcaption></figure>
+        <figure class="gallery-card gallery-card-offset reveal"><img src="photos/photo-6.jpg" alt="Souvenir des mariés, photo 6" loading="lazy"><figcaption>Le début de toujours</figcaption></figure>
+      </div>
+      <p class="gallery-note">Remplacez les fichiers du dossier <strong>photos</strong> par vos propres images en gardant les mêmes noms.</p>
+    </section>
+
+    <section class="schedule-section section" id="programme">
+      <div class="section-heading reveal">
+        <p class="eyebrow">RÉSERVONS CE JOUR À L'AMOUR</p><h2 class="word-reveal">Le programme</h2>
+        <p class="section-intro">Chaque instant sera plus beau parce que vous serez là.</p>
+      </div>
+      <div class="schedule">
+        <article class="schedule-item reveal"><span class="schedule-time">14:00</span><span class="schedule-line"></span><div><h3>Accueil des invités</h3><p>Retrouvons-nous et partageons les premiers sourires.</p></div><span class="schedule-icon">✳</span></article>
+        <article class="schedule-item reveal"><span class="schedule-time">15:00</span><span class="schedule-line"></span><div><h3>La cérémonie</h3><p>Le moment où nous nous dirons « oui ».</p></div><span class="schedule-icon">♡</span></article>
+        <article class="schedule-item reveal"><span class="schedule-time">16:00</span><span class="schedule-line"></span><div><h3>Photos & félicitations</h3><p>Immortalisons ensemble ces instants précieux.</p></div><span class="schedule-icon">⌁</span></article>
+        <article class="schedule-item reveal"><span class="schedule-time">18:00</span><span class="schedule-line"></span><div><h3>Repas & célébration</h3><p>Un repas, des rires et une piste de danse.</p></div><span class="schedule-icon">✳</span></article>
+        <article class="schedule-item reveal"><span class="schedule-time">22:00</span><span class="schedule-line"></span><div><h3>Remerciements</h3><p>Un dernier toast à l'amour et aux souvenirs.</p></div><span class="schedule-icon">♡</span></article>
+      </div>
+      <p class="schedule-note">Les horaires sont à personnaliser selon votre journée.</p>
+    </section>
+
+    <section class="venue-section section" id="lieu">
+      <div class="venue-image reveal" role="img" aria-label="Décoration de mariage"></div>
+      <div class="venue-copy reveal">
+        <p class="eyebrow">RENDEZ-VOUS AU GRAND JOUR</p><h2 class="word-reveal">Le lieu</h2>
+        <h3 data-venue>Nom de la salle</h3>
+        <p data-address>Adresse, ville</p>
+        <p class="venue-small">Nous avons hâte de vous y retrouver pour célébrer ensemble.</p>
+        <div class="map-frame"><iframe title="Carte du lieu du mariage" id="mapFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Kampala%2C%20Uganda&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe></div>
+        <a class="button button-dark" id="directions" href="https://www.google.com/maps/search/?api=1&query=Kampala%2C%20Uganda" target="_blank" rel="noopener">Ouvrir l'itinéraire <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="dress-section section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">UNE HARMONIE TOUT EN DOUCEUR</p><h2 class="word-reveal">Tenue & couleurs</h2>
+        <p class="section-intro">Une touche d'élégance dans les tons naturels nous fera très plaisir.</p>
+      </div>
+      <div class="dress-content reveal">
+        <p class="dress-code" data-dresscode>Tenue de cérémonie élégante — chic et confortable.</p>
+        <div class="swatches">
+          <div class="swatch"><span class="swatch-color cream"></span><span>Crème</span></div>
+          <div class="swatch"><span class="swatch-color terra"></span><span>Terracotta</span></div>
+          <div class="swatch"><span class="swatch-color brown"></span><span>Brun profond</span></div>
+        </div>
+        <p class="dress-note">Merci d'éviter le blanc intégral afin de laisser cette couleur à la mariée.</p>
+      </div>
+    </section>
+
+    <section class="rsvp-section section" id="rsvp">
+      <div class="rsvp-decoration" aria-hidden="true">♡</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow light">VOTRE PRÉSENCE EST NOTRE PLUS BEAU CADEAU</p><h2 class="word-reveal">Serez-vous des nôtres ?</h2>
+        <p class="section-intro">Merci de nous confirmer votre présence afin que nous préparions au mieux cette journée.</p>
+      </div>
+      <p class="rsvp-deadline reveal">Réponse souhaitée avant le <strong data-rsvp-deadline>[date limite de réponse]</strong></p>
+      <a class="button button-light reveal" id="rsvpButton" href="https://forms.google.com/" target="_blank" rel="noopener">Confirmer ma présence <span>↗</span></a>
+      <p class="rsvp-small reveal">Le bouton ouvre notre formulaire de réponse.</p>
+    </section>
+
+    <section class="countdown-section section">
+      <div class="section-heading reveal"><p class="eyebrow">LE COMPTE À REBOURS</p><h2 class="word-reveal">Bientôt, le grand jour</h2></div>
+      <div class="countdown countdown-dark reveal" aria-label="Compte à rebours avant le mariage">
+        <div><strong id="days2">000</strong><span>Jours</span></div><i></i><div><strong id="hours2">00</strong><span>Heures</span></div><i></i><div><strong id="minutes2">00</strong><span>Minutes</span></div><i></i><div><strong id="seconds2">00</strong><span>Secondes</span></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="eyebrow">AVEC TOUT NOTRE AMOUR</p>
+      <p class="footer-message">Merci de faire partie<br>de notre histoire.</p>
+      <div class="footer-initials" data-initials>P & P</div>
+      <p class="hashtag" data-hashtag>#PrénomEtPrénom2027</p>
+      <div class="footer-bottom"><span>FAIT AVEC AMOUR</span><a href="#accueil">RETOUR EN HAUT ↑</a></div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
